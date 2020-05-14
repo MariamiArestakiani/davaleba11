@@ -1,0 +1,76 @@
+@keyframes animation_1{
+    to{
+        width: 650px;
+    }
+}
+
+@keyframes animation_3{
+    0% {top: 180px; left: 20px;}
+    25% {top: 180px; left: 630px;}
+    50% {top: 300px; left: 630px;}
+    75% {top: 300px; left: 20px;}
+    100% {top: 180px; left: 20px;}
+
+}
+.conteiner{
+    position: relative;
+    width: 700px;
+    height: 370px;
+    background-color: lightgray;
+    margin: auto;
+    padding: 20px;
+}
+.line{
+        width: 700px;
+        height: 5px;
+        background-color: black;
+ }
+.line2{
+    width: 700px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 90px;
+}
+.line3{
+    width: 700px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 165px;
+}
+.line4{
+    width: 500px;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 260px;
+    left: 100px;
+    padding: -10px;
+}
+ .box1, .box2, .box3{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.box1{
+    animation-name: animation_1;
+    animation-fill-mode: forwards;
+    background-color: green;
+    border: solid 3px red;
+}
+.box2{
+    animation-name: animation_1;
+    animation-direction: alternate;
+    top: 100px;
+    background-color: yellow;
+    border: solid 3px blue;
+}
+.box3{
+    animation-name: animation_3;
+    animation-fill-mode: forwards;
+    background-color: blue;
+    border: solid 3px red;
+}
